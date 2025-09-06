@@ -31,11 +31,19 @@ function buscarProducto(producto) {
     }
 }
 
-// funcion para agregar productos al carrito"
 mostrarProductos();
-let productoSeleccionado = prompt("Elegi un producto para agregar al carrito");
+let productoElegido = prompt("Elegi un producto para agregar al carrito");
+productoParaAgregarCarrito = buscarProducto(productoElegido)
+ 
 
-carrito.push(buscarProducto(productoSeleccionado));
+
+acepto = confirm ("Realmente quieres agregar el producto " + productoParaAgregarCarrito + "?");
+
+if (acepto == true) {
+    carrito.push(productoParaAgregarCarrito);
+    console.log("Tu carrito contiene " + carrito);
+} else {
+    console.log("vuelve a elegir un producto");
+} 
 
 
-console.log("Tu carrito contiene " + carrito);
