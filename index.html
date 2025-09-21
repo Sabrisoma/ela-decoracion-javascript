@@ -1,14 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
     <title>Document</title>
 </head>
+
 <body>
-   
-    
-    <script src="/app.js"></script>
-     
+    <header></header>
+    <main>
+        <h1> Productos ELA DECORACION </h1>
+        <form id="ProductEla">
+            <div>
+                <label> Nombre: </label>
+                <input type="text" id="Productname" required />
+            </div>
+
+            <div>
+                <label> Descripcion: </label>
+                <input type="text" id="Productdescription" required />
+            </div>
+
+            <div>
+                <label> Precio: </label>
+                <input type="number" id="Productprice" required />
+            </div>
+            <button type="submit"> Agregar Producto</button>
+        </form>
+    </main>
+    <footer>
+        </fooer>
+
+        <div id="contenedordeproductos"></div>
+        <script src="/app.js"></script>
+
 </body>
+
 </html>

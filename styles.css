@@ -1,0 +1,22 @@
+h1 {
+    color: #062242;
+    font-size: 25px;
+}
+
+label {
+    color: #7d58ad;
+    font-size: 20px;
+    line-height: 1;
+    padding-top: 1rem;
+    margin: 20px 16px;
+}
+
+body {
+    background-color: #FEF1F7;
+}
+
+button {
+    line-height: 1;
+    font-size: 15px;
+    background-image: linear-gradient(rgb(214, 191, 195), rgb(241, 211, 216));
+}
