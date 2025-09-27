@@ -34,7 +34,7 @@
 // mostrarProductos();
 // let productoElegido = prompt("Elegi un producto para agregar al carrito");
 // productoParaAgregarCarrito = buscarProducto(productoElegido)
- 
+
 
 // acepto = confirm ("Realmente quieres agregar el producto " + productoParaAgregarCarrito + "?");
 
@@ -48,13 +48,61 @@
 
 // ENTREGA NRO 2 // 
 
-const form= document.getElementById("productela");
-const contenedor=document.getElementById ("contenedordeproductos");
+const form = document.getElementById("productEla");
+const contenedor = document.getElementById("contenedorDeProductos");
+let productId = 1;
+let products = [];
 
 
-form.addEventListener("submit", ()=>{
-    const nombre = document.getElementById("Productname").value;
-    const precio = document.getElementById("Productprice").value;
-    const descripcion = document.getElementById("Productdescription").value;
+form.addEventListener("submit", (evento) => {
+    evento.preventDefault();
 
+    const nombre = document.getElementById("ProductNombre").value;
+    const precio = document.getElementById("ProductPrecio").value;
+    const descripcion = document.getElementById("ProductDescripcion").value;
+    const stock = document.getElementById("ProductStock").value;
+
+
+    const producto = {
+        id: productId++,
+        nombre: nombre,
+        precio: precio,
+        descripcion: descripcion,
+        stock: stock,
+    }
+
+    products.push(producto)
+    renderProduct (producto);
+    form.reset();
 });
+
+//Renderizado de productos//
+
+function renderProduct(producto) {
+    const productDiv = document.createElement("div");
+    productDiv.dataset.id = producto.id;
+
+
+    productDiv.innerHTML = `
+    <div>
+    <p><strong>${producto.nombre}</strong> 
+    <p> ${producto.descripcion}</p>
+    <p> $ ${producto.precio} </p>
+    <p> ${producto.stock}</p>
+    <button>Eliminar</button>
+    </div>
+    `;
+
+    productDiv.querySelector("button").addEventListener("click", () => {
+        deleteProducto(producto.id);
+    });
+    contenedorDeProductos.appendChild(productDiv);
+}
+
+function deleteProducto(id) {
+    products = products.filter((producto) => producto.id != id);
+
+    const productDiv = contenedorDeProductos.querySelector(`[data-id= "${id}"]`)
+    if (productDiv) productDiv.remove()
+
+}
