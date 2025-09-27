@@ -103,6 +103,8 @@ function deleteProducto(id) {
     products = products.filter((producto) => producto.id != id);
 
     const productDiv = contenedorDeProductos.querySelector(`[data-id= "${id}"]`)
-    if (productDiv) productDiv.remove()
-
+    if (productDiv) {
+        productDiv.remove()
+        alert("Producto Eliminado Correctamente del Stock");
+    }
 }
