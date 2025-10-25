@@ -4,61 +4,6 @@
     box-sizing: border-box;
 }
 
-/* === HEADER === */
-.main-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 50px;
-    background-color: #fff;
-    border-bottom: 1px solid #eee;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-
-/* buscador */
-.search-box {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-}
-
-.search-box input {
-    padding: 8px 12px;
-    border: 1px solid #DEA4BD;
-    border-radius: 6px;
-    width: 220px;
-    font-family: 'Poppins', sans-serif;
-}
-
-.search-box button {
-    border: 1px solid #ccc;
-    background-color: #f9f9f9;
-    border-radius: 6px;
-    padding: 8px 10px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.search-box button:hover {
-    background-color: #DEA4BD;
-    color: white;
-}
-
-
-.logo {
-  height: 120px;
-  width: 120px;
-  max-width: 100%;
-  height: auto;
-}
-
-img {
-  height: 300px;
-  width: 300px;
-}
-
 /* carrito */
 .btn-carrito {
     position: relative;
@@ -77,14 +22,14 @@ img {
 }
 
 .btn-carrito:hover {
-    background-color: #432dd9;
+    background-color: #e226aa;
 }
 
 .cart-count {
     position: absolute;
     top: -8px;
     right: -8px;
-    background-color: #E60023;
+    background-color: #f812e5;
     color: white;
     font-size: 0.7rem;
     font-weight: bold;
@@ -100,7 +45,6 @@ body {
     max-width: 1400px;
 }
 
-/* Agregamos padding solo al contenido principal */
 main {
     padding: 40px;
 }
@@ -124,7 +68,7 @@ h2 {
 /* Tarjeta de producto */
 .product-card {
     background-color: white;
-    border: 1px solid #e0d5e9;
+    border: 3px;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
     transition: all 0.3s ease;
@@ -134,6 +78,9 @@ h2 {
     flex-direction: column;
     align-items: center;
     padding-bottom: 15px;
+    line-height: 2;
+    font-size: 22px;
+    background-image: linear-gradient(rgb(214, 191, 195), rgb(241, 211, 216));
 }
 
 .product-card:hover {
@@ -148,7 +95,10 @@ h2 {
     object-fit: cover;
     object-position: center;
     border-bottom: 4px solid #F4C4D6;
-    border-radius: 12px 12px 0 0;
+    padding: 16px;
+    border: 1px solid #062242;
+    border-radius: 5px;
+    margin: 16px;
 }
 
 /* Nombre del producto */
@@ -236,4 +186,72 @@ h2 {
     font-weight: bold;
     padding: 50px;
     grid-column: 1 / -1;
+}
+
+/* === FOOTER === */
+footer {
+    background-color: #FEF1F7;
+    padding: 2rem 3rem;
+    border-top: 5px solid #DEA4BD;
+    font-family: 'Poppins', sans-serif;
+    color: #062242;
+}
+
+/* Contenedor principal del footer */
+footer .container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* Alineación de las dos columnas */
+footer .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+/* Cada columna ocupa todo en mobile, 50% en pantallas grandes */
+footer .col-md-6 {
+    flex: 1 1 300px;
+}
+
+/* Títulos */
+footer h6 {
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+/* Etiquetas de medios de pago/envío */
+.etiqueta-pago,
+.etiqueta-envio {
+    background-color: #DEA4BD;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    display: inline-block;
+    margin: 3px;
+}
+
+/* Enlaces y textos */
+footer a {
+    color: #8a1f64;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer p {
+    font-size: 0.85rem;
+    margin: 4px 0;
+}
+
+footer i {
+    color: #8a1f64;
+    margin-right: 6px;
 }

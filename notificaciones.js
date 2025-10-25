@@ -48,14 +48,7 @@ export async function confirmarEliminarProducto(nombreProducto) {
     confirmButtonText: "Sí, eliminar!",
     cancelButtonText: "Cancelar"
   });
-
-  if (result.isConfirmed) {
-    await Swal.fire({
-      title: "Eliminado",
-      text: "El producto ha sido eliminado con éxito",
-      icon: "success"
-    });
-  }
+  
   return result;
 }
 
