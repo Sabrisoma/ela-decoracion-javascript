@@ -4,96 +4,166 @@
     box-sizing: border-box;
 }
 
-.body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #DEA4BD;
-    padding: 20px;
-    max-width: 1200px;
+body {
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    background-color: #FFE6F0;
+    /* Fondo rosa suave */
+    padding: 40px;
+    max-width: 1400px;
     margin: 0 auto;
 }
 
-.h1,
+/* Títulos */
+h1,
 h2 {
     text-align: center;
     margin: 20px 0;
     color: #062242;
 }
 
+/* Contenedor general */
 #output {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax (250px, 1fr));
-    gap: 20px;
-    margin-top: 20px;
-
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
 }
 
+/* Tarjeta de producto */
 .product-card {
-    padding: 16px;
-    border: 1px solid #062242;
-    border-radius: 5px;
-    margin: 16px;
+    background-color: rgb(231, 203, 203);
+    border: 1px solid #e0d5e9;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    text-align: center;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 15px;
 }
 
 .product-card:hover {
-    transform: translateY(-5px) scale(1.02);
+    transform: translateY(-6px);
     box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
 }
 
 .product-image {
-    margin: 20px 16px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 12px 12px 0 0;
+    background-color: #fdf3f8;
+}
+
+
+/* Nombre del producto */
+.product-name {
+    background-color: #F4C4D6;
+    color: #062242;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 12px 0;
+    width: 100%;
+}
+
+/* Precio */
+.product-price {
+    font-size: 1.1rem;
+    color: #062242;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Botón de detalle o compra */
+.btn-comprar {
+    margin-top: 10px;
+    background-color: #DEA4BD;
+    color: #062242;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;/* Tarjeta de producto */
+.product-card {
+    background-color: white;
+    border: 1px solid #e0d5e9;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    text-align: center;
+    overflow: hidden;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 15px;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* Imagen del producto */
+.product-image {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-bottom: 4px solid #F4C4D6;
+}
+    transition: background-color 0.3s ease;
+    text-decoration: none;
 }
 
 .btn-comprar:hover {
     background-color: #DEA4BD;
 }
 
+/* Carrito */
 #carrito {
-    margin-top: 30px;
-    padding: 20px;
-    background-color: aqua;
+    margin-top: 40px;
+    padding: 25px;
+    background-color: #DEA4BD;
     border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgba(245, 241, 241, 0.1);
 }
 
+/* Items del carrito */
 .carrito-item {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 12px;
     margin: 8px 0;
-    background-color: azure;
-    border: 1px solid blueviolet;
+    background-color: #fff;
+    border: 1px solid #F4C4D6;
     border-radius: 6px;
 }
 
 .items-info {
     font-size: 14px;
+    color: #062242;
 }
 
+/* Botón eliminar */
 .btn-eliminar {
-    background-color: brown;
+    background-color: #6b075e;
     color: white;
     padding: 6px 12px;
     border: none;
-    border-radius: 4px;
+    border-radius: 6px;
     cursor: pointer;
     font-size: 12px;
-    transition: backgroud-color 0.3s;
+    transition: background-color 0.3s ease;
 }
 
 .btn-eliminar:hover {
-    background-color: beige;
+    background-color: #DEA4BD;
 }
 
+/* Loading */
 .loading {
     text-align: center;
     font-size: 24px;
-    color: aqua;
+    color: #062242;
     font-weight: bold;
     padding: 50px;
     grid-column: 1 / -1;

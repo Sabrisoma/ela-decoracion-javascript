@@ -10,7 +10,7 @@ function agregarAlCarrito(title, precio) {
 
     `;
 
-    const botonEliminar = itemCarrito.querySelector(".btn-eliminar")
+    const botonEliminar = itemCarrito.querySelector(".btn-eliminar");
     botonEliminar.addEventListener("click", function () {
         manejarEliminarDelCarrito(itemCarrito, title);
     });
@@ -29,12 +29,12 @@ export async function manejarAgregarAlCarrito(id, title, precio) {
 
 }
 
+
 async function manejarEliminarDelCarrito(itemCarrito, title) {
-    const resultado = await confirmarEliminarProducto(title);
+  const resultado = await confirmarEliminarProducto(title);
 
-    if (resultado.isConfirmed) {
-        itemCarrito.remove();
-        mostrarToastExito("Producto eliminado con exito");
-    }
-
+  if (resultado.isConfirmed) {
+    itemCarrito.remove();
+    mostrarToastExito("Producto eliminado con éxito");
+  }
 }

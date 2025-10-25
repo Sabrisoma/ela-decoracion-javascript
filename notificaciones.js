@@ -37,24 +37,26 @@ export function confirmarAgregarProducto(nombreProducto) {
     });
 }
 
-export function confirmarEliminarProducto(nombreProducto) {
-    return Swal.fire({
-        title: "Estas seguro de eliminar el producto?",
-        text: "No podrás volver atrás",
-        icon: "warning",
-        showCancelButton: true,
-        confirmButtonColor: "#f07ed3ff",
-        cancelButtonColor: "rgba(250, 181, 246, 1)",
-        confirmButtonText: "Sí, eliminar!"
-    }).then((result) => {
-        if (result.isConfirmed) {
-            Swal.fire({
-                title: "Eliminado",
-                text: "El Producto ha sido Eliminado",
-                icon: "success"
-            });
-        }
+export async function confirmarEliminarProducto(nombreProducto) {
+  const result = await Swal.fire({
+    title: "¿Estás seguro de eliminar el producto?",
+    text: `No podrás volver atrás si eliminás "${nombreProducto}"`,
+    icon: "warning",
+    showCancelButton: true,
+    confirmButtonColor: "#f07ed3ff",
+    cancelButtonColor: "rgba(250, 181, 246, 1)",
+    confirmButtonText: "Sí, eliminar!",
+    cancelButtonText: "Cancelar"
+  });
+
+  if (result.isConfirmed) {
+    await Swal.fire({
+      title: "Eliminado",
+      text: "El producto ha sido eliminado con éxito",
+      icon: "success"
     });
+  }
+  return result;
 }
 
 export function mostrarToastExito(mensaje) {
