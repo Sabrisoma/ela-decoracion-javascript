@@ -28,11 +28,15 @@ function crearTarjetaProducto(producto) {
     const tarjeta = document.createElement("div");
 
     tarjeta.innerHTML = `
+    <div class="contenedor-productos">
     <img src="${producto.image}" alt="${producto.title}" class ="product-image">
     <h4>${producto.title}</h4>
+    <h6>${producto.description}</h6>
     <p class="product-price">$${producto.price} </p>
     <button class= "btn-comprar"> Agregar </button>
+    </div>
     `;
+    
 
     const botonComprar = tarjeta.querySelector(".btn-comprar");
 

@@ -3,42 +3,71 @@
         "id": 1,
         "title": "Mate Emilia",
         "price": "18500",
-        "description": "descripcion mate 1",
+        "description": "Mate de algarrobo pintado a mano",
         "image": "./imagenes/emilia.jpeg"
     },
     {
         "id": 2,
         "title": "Combo Agnes",
         "price": "25200",
-        "description": "description mate 2",
+        "description": "Combo tabla + mate de algarrobo",
         "image": "./imagenes/agnes.jpeg"
     },
     {
         "id": 3,
         "title": "Agenda Ela",
         "price": "30000",
-        "description": "description mate 2",
+        "description": "Agenda Ela semana a la vista",
         "image": "./imagenes/agendaela.png"
     },
     {
         "id": 4,
         "title": "Agenda Blanca",
         "price": "30000",
-        "description": "description mate 2",
+        "description": "Agenda Blanca semana a la vista",
         "image": "./imagenes/agendablanca.png"
     },
     {
         "id": 5,
         "title": "Combo Ela",
         "price": "18500",
-        "description": "description mate 2",
+        "description": "Combo Azucarera + mate de Algarrobo con virola de Acero",
         "image": "./imagenes/comboela.jpeg"
     },
     {
         "id": 6,
         "title": "Mate Gardenia",
         "price": "16000",
-        "description": "description mate 2",
+        "description": "Mate de Acero pintado a mano",
         "image": "./imagenes/mategardenia.jpeg"
+    },
+    {
+        "id": 7,
+        "title": "Mate Campo Lola",
+        "price": "32000",
+        "description": "Mate de Calabaza con pie",
+        "image": "./imagenes/matelola.jpeg"
+    },
+    {
+        "id": 8,
+        "title": "Combo Rosa",
+        "price": "21000",
+        "description": "Mate y Porta Sahumerio Rosa",
+        "image": "./imagenes/rosa.jpeg"
+    },
+    {
+        "id": 9,
+        "title": "Combo Tina",
+        "price": "20000",
+        "description": "Combo plato + mate de algarrobo",
+        "image": "./imagenes/tina.jpeg"
+    },
+    {
+        "id": 10,
+        "title": "Vela Horus",
+        "price": "22000",
+        "description": "Vela Horus de Lavanda/Romero",
+        "image": "./imagenes/velahorus.jpeg"
     }
+    
 ]
