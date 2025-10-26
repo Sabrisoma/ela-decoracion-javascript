@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-/* carrito */
+/* === CARRITO === */
 .btn-carrito {
     position: relative;
     background-color: #062242;
@@ -39,8 +39,8 @@
 
 /* === BODY GENERAL === */
 body {
-    font-family: 'Poppins', Arial, Helvetica, sans-serif;
-    background-color: #FFE6F0;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    background-color: #ffe6f0;
     margin: 0 auto;
     max-width: 1400px;
 }
@@ -49,7 +49,7 @@ main {
     padding: 40px;
 }
 
-/* Títulos */
+/* === TÍTULOS === */
 h1,
 h2 {
     text-align: center;
@@ -57,7 +57,7 @@ h2 {
     color: #062242;
 }
 
-/* Contenedor general */
+/* === CONTENEDOR GENERAL === */
 #output {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -65,7 +65,7 @@ h2 {
     margin-top: 30px;
 }
 
-/* Tarjeta de producto */
+/* === TARJETA DE PRODUCTO === */
 .product-card {
     background-color: white;
     border: 3px;
@@ -88,22 +88,22 @@ h2 {
     box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
 }
 
-/* Imagen del producto */
+/* === IMAGEN DEL PRODUCTO === */
 .product-image {
     width: 100%;
     height: 260px;
     object-fit: cover;
     object-position: center;
-    border-bottom: 4px solid #F4C4D6;
+    border-bottom: 4px solid #f4c4d6;
     padding: 16px;
     border: 1px solid #062242;
     border-radius: 5px;
     margin: 16px;
 }
 
-/* Nombre del producto */
+/* === NOMBRE DEL PRODUCTO === */
 .product-name {
-    background-color: #F4C4D6;
+    background-color: #f4c4d6;
     color: #062242;
     font-weight: bold;
     font-size: 1rem;
@@ -111,7 +111,7 @@ h2 {
     width: 100%;
 }
 
-/* Precio */
+/* === PRECIO === */
 .product-price {
     font-size: 1.1rem;
     color: #062242;
@@ -119,10 +119,10 @@ h2 {
     margin-top: 10px;
 }
 
-/* Botón de compra */
+/* === BOTÓN COMPRAR === */
 .btn-comprar {
     margin-top: 10px;
-    background-color: #DEA4BD;
+    background-color: #dea4bd;
     color: #062242;
     padding: 10px 18px;
     border: none;
@@ -136,16 +136,16 @@ h2 {
     background-color: #c88ba9;
 }
 
-/* Carrito */
+/* === CARRITO === */
 #carrito {
     margin-top: 40px;
     padding: 25px;
-    background-color: #DEA4BD;
+    background-color: #dea4bd;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(245, 241, 241, 0.1);
 }
 
-/* Items del carrito */
+/* === ITEMS DEL CARRITO === */
 .carrito-item {
     display: flex;
     justify-content: space-between;
@@ -153,7 +153,7 @@ h2 {
     padding: 12px;
     margin: 8px 0;
     background-color: #fff;
-    border: 1px solid #F4C4D6;
+    border: 1px solid #f4c4d6;
     border-radius: 6px;
 }
 
@@ -162,7 +162,7 @@ h2 {
     color: #062242;
 }
 
-/* Botón eliminar */
+/* === BOTÓN ELIMINAR === */
 .btn-eliminar {
     background-color: #6b075e;
     color: white;
@@ -175,10 +175,10 @@ h2 {
 }
 
 .btn-eliminar:hover {
-    background-color: #DEA4BD;
+    background-color: #dea4bd;
 }
 
-/* Loading */
+/* === LOADING === */
 .loading {
     text-align: center;
     font-size: 24px;
@@ -190,10 +190,10 @@ h2 {
 
 /* === FOOTER === */
 footer {
-    background-color: #FEF1F7;
+    background-color: #fef1f7;
     padding: 2rem 3rem;
-    border-top: 5px solid #DEA4BD;
-    font-family: 'Poppins', sans-serif;
+    border-top: 5px solid #dea4bd;
+    font-family: "Poppins", sans-serif;
     color: #062242;
 }
 
@@ -226,7 +226,7 @@ footer h6 {
 /* Etiquetas de medios de pago/envío */
 .etiqueta-pago,
 .etiqueta-envio {
-    background-color: #DEA4BD;
+    background-color: #dea4bd;
     color: #fff;
     padding: 5px 10px;
     border-radius: 20px;
