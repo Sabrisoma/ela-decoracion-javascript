@@ -4,6 +4,17 @@
     box-sizing: border-box;
 }
 
+.banner {
+    height: 720px;
+    width: 1920px;
+    block-size: auto;
+}
+
+img {
+    height: 300px;
+    width: 300px;
+}
+
 /* === CARRITO === */
 .btn-carrito {
     position: relative;
