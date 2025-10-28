@@ -1,28 +1,4 @@
-/* import Swal from "sweetalert2";
-
-export function confirmarEliminarProducto() {
-    return Swal.fire({
-        title: "Estas seguro de eliminar el producto?",
-        text: "No podrás volver atrás",
-        icon: "warning",
-        showCancelButton: true,
-        confirmButtonColor: "#f07ed3ff",
-        cancelButtonColor: "rgba(250, 181, 246, 1)",
-        confirmButtonText: "Sí, eliminar!"
-    }).then((result) => {
-        if (result.isConfirmed) {
-            Swal.fire({
-                title: "Eliminado",
-                text: "El Producto ha sido Eliminado",
-                icon: "success"
-            });
-        }
-    });
-}
-
-confirmarEliminarProducto() */
-
-import Swal from "https://cdn.jsdelivr.net/npm/sweetalert2@11/+esm"; //revisar antes de entregar si hay otra forma de resolverlo
+import Swal from "https://cdn.jsdelivr.net/npm/sweetalert2@11/+esm"; 
 
 export function confirmarAgregarProducto(nombreProducto) {
     return Swal.fire({
